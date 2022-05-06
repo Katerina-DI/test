@@ -1,0 +1,27 @@
+.training_page__breadCrumds {
+  margin: 66px 0 0;
+  @media (max-width: $xs) {
+    margin-top: 40px;
+  }
+  ul {
+    @include flex-row;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li a {
+      font-family: Lato-Regular;
+      font-size: 16px;
+      line-height: 19px;
+      text-decoration: none;
+      color: rgba(51, 26, 47, 0.5);
+    }
+  }
+  .breadCrumds__line {
+    margin: 0 8px;
+    width: 10px;
+    height: 1px;
+    align-self: center;
+    background: rgba(51, 26, 47, 0.5);
+  }
+}

@@ -1,0 +1,205 @@
+.navbar {
+  @include flex-row;
+  justify-content: space-between;
+  padding-top: 35px;
+
+  .navbar__logo {
+    @include flex-row;
+    justify-content: start;
+    margin-right: 31px;
+    img {
+      width: 60px;
+      height: 58px;
+      padding-right: 13px;
+      align-self: center;
+      @media (max-width: $lg) {
+        width: 47px;
+        height: 44px;
+      }
+      @media (max-width: $sm) {
+        padding-right: 5.88px;
+        height: 40px;
+      }
+      @media (max-width: $xs) {
+        width: 35px;
+        height: 32px;
+      }
+    }
+    .logoText {
+      margin: 0;
+      align-self: center;
+      font-family: Aretha-Bold;
+      font-size: 31.8678px;
+      line-height: 39px;
+      letter-spacing: -0.01em;
+      color: $grayBlue;
+      .colorText {
+        color: $rose;
+      }
+      @media (max-width: $lg) {
+        font-size: 24.7643px;
+        line-height: 30px;
+      }
+      @media (max-width: $xs) {
+        font-size: 18.5124px;
+        line-height: 22px;
+      }
+    }
+    .navbar__logo__line {
+      width: 80px;
+      height: 0px;
+      border: 1px solid $darkViolet;
+      transform: rotate(90deg);
+      align-self: center;
+      @media (max-width: $lg) {
+        width: 62px;
+      }
+      @media (max-width: $xs) {
+        display: none;
+      }
+    }
+    .logo_paragraph {
+      margin: 0;
+
+      font-family: Lato-Regular;
+      font-size: 14px;
+      line-height: 18px;
+      color: rgba(51, 26, 47, 0.9);
+      align-self: center;
+      @media (max-width: $lg) {
+        font-size: 10px;
+        line-height: 14px;
+      }
+      @media (max-width: $xs) {
+        display: none;
+      }
+
+      // width: 26%;
+    }
+    @media (max-width: $sm) {
+      margin-right: 78px;
+    }
+    @media (max-width: $xs) {
+      margin-right: 23px;
+    }
+  }
+  .navbar__menu {
+    margin: 0 215px 0 0px;
+    align-self: center;
+    @media (max-width: $lg) {
+      margin: 0 137.13px 0 0;
+    }
+    @media (max-width: $sm) {
+      display: none;
+    }
+  }
+  .navbar__menu__topmenu {
+    @include flex-row;
+    @media (max-width: $sm) {
+      display: none;
+    }
+    .dropdown {
+      @include flex-row;
+      text-decoration: none;
+      padding-right: 50px;
+
+      @media (max-width: $lg) {
+        padding-right: 40.45px;
+      }
+
+      .fa {
+        padding-left: 11px;
+        align-self: center;
+      }
+    }
+    a {
+      align-self: center;
+      text-decoration: none;
+      font-family: Lato-Regular;
+      font-size: 24px;
+      line-height: 35px;
+      color: $black;
+      @media (max-width: $lg) {
+        font-size: 18px;
+        line-height: 35px;
+      }
+    }
+    a:hover {
+      transition: 0.5s;
+      color: $rose;
+    }
+  }
+
+  .navbar__phone {
+    @include flex-row;
+    align-self: center;
+    padding-right: 91px;
+    @media (max-width: $sm) {
+      display: none;
+    }
+
+    img {
+      width: 18px;
+      height: 18px;
+      align-self: center;
+      padding-right: 7.62px;
+      @media (max-width: $lg) {
+        width: 15.63px;
+        height: 15.58px;
+        padding-right: 4.19px;
+      }
+    }
+    .paragraph {
+      font-family: Lato-Regular;
+      font-size: 24px;
+      line-height: 35px;
+      color: $black;
+      align-self: center;
+      @media (max-width: $lg) {
+        font-size: 18px;
+        line-height: 35px;
+      }
+    }
+  }
+  button {
+    align-self: center;
+    cursor: pointer;
+    background: $rose;
+    border-radius: 12px;
+    border: none;
+    padding: 0;
+    .navbar__btn {
+      @include flex-row;
+      margin: 4px 32px;
+      img {
+        margin-right: 14px;
+      }
+      .paragraph {
+        margin: 0;
+
+        font-family: Lato-Medium;
+        font-size: 23px;
+        line-height: 35px;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: $white;
+
+        @media (max-width: $lg) {
+          font-size: 18px;
+          line-height: 35px;
+        }
+        @media (max-width: $sm) {
+          font-size: 20px;
+          line-height: 35px;
+        }
+        @media (max-width: $xs) {
+          font-size: 14px;
+          line-height: 28px;
+        }
+      }
+      @media (max-width: $xs) {
+        margin: 4px 20px;
+      }
+    }
+  }
+}

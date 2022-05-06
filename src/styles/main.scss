@@ -1,0 +1,126 @@
+@import "./constants.scss";
+@import "./extend.scss";
+@import "./mixins.scss";
+@import "./fonts.scss";
+@import "./nav.scss";
+@import "./mixins.scss";
+@import "./breadCrumbs.scss";
+@import "./trainingPage.scss";
+@import "./historeOfCreation.scss";
+@import "./trainingFooter.scss";
+@import "./hamburger.scss";
+
+body {
+  margin: 0;
+}
+section {
+  background: $lightBeige;
+  position: relative;
+  overflow: hidden;
+}
+
+.ellips_item {
+  z-index: 1;
+  position: absolute;
+  width: 782px;
+  height: 783px;
+  left: -681px;
+  top: -178px;
+
+  background: linear-gradient(
+    264.3deg,
+    rgba(124, 78, 171, 0.2) 0.87%,
+    rgba(221, 81, 212, 0.2) 112.89%
+  );
+  border-radius: 50%;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  @media (max-width: $lg) {
+    width: 446px;
+    height: 446.57px;
+    left: -411px;
+    top: -98.59px;
+    @media (max-width: $sm) {
+      display: none;
+    }
+  }
+}
+.ellips_item1 {
+  z-index: 2;
+  position: absolute;
+  width: 782px;
+  height: 783px;
+  left: -701px;
+  top: -198px;
+
+  background: linear-gradient(
+    264.3deg,
+    rgba(124, 78, 171, 0.8) 0.87%,
+    rgba(221, 81, 212, 0.8) 112.89%
+  );
+  border-radius: 50%;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  @media (max-width: $lg) {
+    width: 446px;
+    height: 446.57px;
+    left: -423px;
+    top: -110px;
+  }
+  @media (max-width: $sm) {
+    display: none;
+  }
+}
+
+.ellips_item2 {
+  z-index: 1;
+  position: absolute;
+  width: 739.59px;
+  height: 740.56px;
+  right: -699px;
+  top: 403.93px;
+  background: linear-gradient(
+    264.3deg,
+    rgba(124, 78, 171, 0.2) 0.87%,
+    rgba(221, 81, 212, 0.2) 112.89%
+  );
+  border-radius: 50%;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  @media (max-width: $lg) {
+    display: none;
+  }
+  @media (max-width: $sm) {
+    display: none;
+  }
+}
+.ellips_item3 {
+  z-index: 2;
+  position: absolute;
+  width: 739.59px;
+  height: 740.56px;
+  right: -719px;
+  top: 384.51px;
+
+  background: linear-gradient(
+    264.3deg,
+    rgba(124, 78, 171, 0.8) 0.87%,
+    rgba(221, 81, 212, 0.8) 112.89%
+  );
+  border-radius: 50%;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  @media (max-width: $lg) {
+    display: none;
+  }
+  @media (max-width: $sm) {
+    display: none;
+  }
+}
+
+.training_page__container {
+  width: 85%;
+  margin: 0 auto;
+  @media (max-width: $lg) {
+    width: 94%;
+  }
+  @media (max-width: $sm) {
+    width: 96%;
+  }
+}

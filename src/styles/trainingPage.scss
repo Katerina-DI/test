@@ -1,0 +1,112 @@
+.heading_level_1 {
+  @extend %heading_level_1;
+  margin: 15px 0 26px;
+  width: 59%;
+  .colorText {
+    color: $rose;
+  }
+  @media (max-width: $lg) {
+    margin-bottom: 40px;
+    width: 65%;
+  }
+  @media (max-width: $sm) {
+    width: 100%;
+    margin-bottom: 18px;
+  }
+  @media (max-width: $xs) {
+    width: 60%;
+    margin: 44px 0 24px;
+  }
+}
+.training_page__course {
+  @include flex-row;
+  margin-bottom: 143px;
+  @media (max-width: $lg) {
+    margin-bottom: 73.5px;
+  }
+  @media (max-width: $sm) {
+    margin-bottom: 65px;
+  }
+  .training_page__course__info {
+    width: 57%;
+    margin-right: 30px;
+    @media (max-width: $sm) {
+      margin-right: 26px;
+    }
+    @media (max-width: $xs) {
+      width: 100%;
+      margin-right: 0;
+    }
+
+    .training_page__course__cost {
+      @include flex-row;
+      .heading_level_6 {
+        align-self: center;
+        font-family: Lato-Semibold;
+        font-size: 20px;
+        line-height: 29px;
+        color: rgba(51, 26, 47, 0.8);
+        flex: none;
+        order: 1;
+        flex-grow: 0;
+        margin: 0px 25px;
+        .colorText {
+          font-family: Lato-Regular;
+          color: $rose;
+          font-size: 35px;
+        }
+      }
+    }
+    .paragraph {
+      @extend %paragraph;
+      color: rgba(51, 26, 47, 0.8);
+      flex: none;
+      order: 1;
+      align-self: stretch;
+      flex-grow: 0;
+      margin: 0;
+      padding-top: 15px;
+      @media (max-width: $xs) {
+        padding-top: 10px;
+      }
+    }
+  }
+  .training_page__course__superman {
+    position: relative;
+    top: -160px;
+
+    @media (max-width: $sm) {
+      top: 0;
+    }
+    @media (max-width: $sm) {
+      top: 0px;
+    }
+    @media (max-width: $xs) {
+      top: -220px;
+      right: 130px;
+    }
+
+    .training_page__course__superman__stars {
+      position: absolute;
+
+      @media (max-width: $lg) {
+        width: 458px;
+        height: 416.08px;
+      }
+      @media (max-width: $sm) {
+        display: none;
+      }
+    }
+    .training_page__course__superman__superman {
+      position: absolute;
+      @media (max-width: $lg) {
+        width: 435.35px;
+        height: 435.35px;
+      }
+      @media (max-width: $xs) {
+        width: 245px;
+        height: 245px;
+      }
+    }
+  }
+}
